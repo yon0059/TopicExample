@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMOVING DOM Elements</title>
+</head>
+<body>
+    <ul id = "shopping-list">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Oranges</li>
+    </ul>
+    <button onclick="removeItem()">Remove Last Item</button>
+
+
+<!-- 3)
+    <script>
+        function removeItem() {
+            let list = document.getElementById("shopping-list");
+
+            if (list.lastElementChild) {
+                list.lastElementChild.remove();
+            }
+        }
+    </script> -->
+
+
+<!-- 2)
+        <script>
+        function changeColor() {
+            let button = document.getElementById("myButton");
+            button.style.backgroundColor = "yellow";
+            button.innerText = "CLICKED!";
+        }
+    </script> -->
+
+
+<!-- 1)
+    <script>
+        function addTask(){
+            let newTask = document.createElement("li");
+            newTask.innerText = "New Task";
+            document.getElementById("task-list").appendChild(newTask);
+        }
+    </script> -->
+
+</body>
+</html>
+
+
+<!-- CREATING DOM ELEMENTS
+
+Syntax:
+
+let element = document.createElement("tagName")
+
+-- MODIFYING DOM ELEMENTS
+
+syntax:
+element.innerText - changes the text inside an element 
+element.innerHTML - changes the HTML inside an element
+element.style.property - changesd the CSS style of an element
+element.setAttribute(name, value) - set an attribute (src, href, class)
+element.classList.add(className) - adds a CSS class to an element
+
+
+-- REMOVING DOM ELEMENTS
+
+syntax: 
+element.remove()
+
+-->
+
+
